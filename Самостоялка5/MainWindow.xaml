@@ -1,0 +1,30 @@
+﻿<Window x:Class="Самостоялка5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Самостоялка5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TreeView x:Name="treeview" Margin="32,0,509.333,232.667">
+            <!--<TextBox>Элемент TreeView</TextBox>-->
+            <TreeViewItem Header="Породы котов" Expanded="TreeViewItem_Expanded">
+                <TreeViewItem Header="Пушистые" Selected="TreeViewItem2_Selected"/>
+                <TreeViewItem Header="Гладкошерстные" Selected="TreeViewItem3_Selected"/>
+                <TreeViewItem Header="Сфинксы" Selected="TreeViewItem4_Selected"/>
+            </TreeViewItem>
+            <ListBox Height="100" Margin="0,132,0,-216" VerticalAlignment="Top" Width="100"/>
+        </TreeView>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="233" Margin="32,188,0,-0.333" VerticalAlignment="Top" Width="252" MouseDoubleClick="listBox1_MouseDoubleClick">
+        <TextBlock x:Name="textblock" FontWeight="Bold" TextDecorations="Underline" />
+            <!--<ListBoxItem x:Name="ListBoxItem1" Background="LightGray"></ListBoxItem>-->
+        <!--<ListBoxItem>Huawei Nexus 6P</ListBoxItem>
+        <ListBoxItem Background="LightGray">iPhone 6S</ListBoxItem>
+        <ListBoxItem>iPhone 6S Plus</ListBoxItem>
+        <ListBoxItem Background="LightGray">Аsus Zenphone 2</ListBoxItem>
+        <ListBoxItem>Microsoft Lumia 950</ListBoxItem>-->
+        </ListBox>
+        <Image x:Name="photo" HorizontalAlignment="Left" Height="363" Margin="397,28,0,0" VerticalAlignment="Top" Width="309"/>
+    </Grid>
+</Window>
